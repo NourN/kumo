@@ -1,0 +1,71 @@
+ 
+@font-face {
+  font-family: 'KH Teka';
+  src: url('KH-Teka.woff2') format('woff2');
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: linear-gradient(to bottom, #ff9a8b, #ff6a88);
+  font-family: 'KH Teka', sans-serif;
+}
+
+.logo {
+  font-family: 'KH Teka', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  color: black;
+  position: fixed;
+  top: 10px;
+  left: 20px;
+}
+
+.cloud {
+  position: absolute;
+  fill: white;
+  opacity: 0.6;
+}
+
+.menu {
+  position: relative;
+  text-align: center;
+  padding: 50px 20px;
+  z-index: 999;
+}
+.menu h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  max-width: 500px;
+  margin: 10px auto;
+  font-size: 20px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 5px;
+}
+
+.contact {
+  position: relative;
+  text-align: center;
+  padding: 50px 20px;
+  z-index: 999;
+}
+.contact a {
+  display: block;
+  font-size: 20px;
+  margin: 10px 0;
+  color: black;
+  text-decoration: none;
+}
+
+.footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  bottom: 0;
+  width: 100%;
+}
