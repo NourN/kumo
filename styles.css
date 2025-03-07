@@ -16,7 +16,7 @@ body {
   font-size: 32px;
   font-weight: 900;
   color: black;
-  position: fixed;
+  position: relative;
   top: 10px;
   left: 20px;
 }
