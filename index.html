@@ -5,23 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>雲 Kumo - Sushi Restaurant</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <script defer src="cloudAnimation.js"></script>
+    <script defer src="backgroundChange.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
     <div class="logo">雲</div>
-    
-    <svg class="cloud" id="cloud1" width="200" height="120" viewBox="0 0 200 120" style="top: 20%; left: 10%;">
-      <ellipse cx="60" cy="60" rx="50" ry="30" />
-      <ellipse cx="100" cy="50" rx="40" ry="25" />
-      <ellipse cx="140" cy="60" rx="50" ry="30" />
+      
+    <svg class="cloud" id="cloud1" width="200" height="120" viewBox="0 0 200 120" style="top: 10%; left: 5%;">
+      <ellipse cx="55" cy="60" rx="50" ry="30" />
+      <ellipse cx="95" cy="40" rx="40" ry="25" />
+      <ellipse cx="135" cy="60" rx="50" ry="30" />
     </svg>
-    
-    <svg class="cloud" id="cloud2" width="250" height="150" viewBox="0 0 250 150" style="top: 40%; left: 50%;">
-        <ellipse cx="75" cy="75" rx="60" ry="35" />
-        <ellipse cx="125" cy="65" rx="50" ry="30" />
-        <ellipse cx="175" cy="75" rx="60" ry="35" />
+
+    <svg class="cloud" id="cloud2" width="250" height="150" viewBox="0 0 250 150" style="top: 20%; left: 50%;">
+      <ellipse cx="65" cy="75" rx="55" ry="32" />
+      <ellipse cx="75" cy="45" rx="50" ry="30" />
+      <ellipse cx="135" cy="75" rx="55" ry="32" />
     </svg>
+
+    <svg class="cloud" id="cloud3" width="220" height="140" viewBox="0 0 220 140" style="top: 30%; left: 20%;">
+      <ellipse cx="60" cy="70" rx="52" ry="28" />
+      <ellipse cx="105" cy="40" rx="45" ry="27" />
+      <ellipse cx="130" cy="70" rx="52" ry="28" />
+    </svg>
+
+    <svg class="cloud" id="cloud4" width="280" height="160" viewBox="0 0 280 160" style="top: 40%; left: 70%;">
+      <ellipse cx="75" cy="80" rx="65" ry="38" />
+      <ellipse cx="105" cy="50" rx="60" ry="35" />
+      <ellipse cx="165" cy="80" rx="65" ry="38" />
+    </svg>
+
+    <svg class="cloud" id="cloud5" width="180" height="100" viewBox="0 0 180 100" style="top: 50%; left: 30%;">
+      <ellipse cx="50" cy="50" rx="45" ry="25" />
+      <ellipse cx="85" cy="40" rx="38" ry="22" />
+      <ellipse cx="100" cy="50" rx="45" ry="25" />
+    </svg>
+
+    <svg class="cloud" id="cloud6" width="260" height="140" viewBox="0 0 260 140" style="top: 60%; left: 10%;">
+      <ellipse cx="70" cy="70" rx="58" ry="33" />
+      <ellipse cx="125" cy="40" rx="52" ry="30" />
+      <ellipse cx="140" cy="70" rx="58" ry="33" />
+    </svg>
+
+    <svg class="cloud" id="cloud7" width="230" height="130" viewBox="0 0 230 130" style="top: 70%; left: 80%;">
+      <ellipse cx="65" cy="65" rx="55" ry="30" />
+      <ellipse cx="110" cy="45" rx="48" ry="28" />
+      <ellipse cx="135" cy="65" rx="55" ry="30" />
+    </svg>
+
+
     
     <div class="menu">
         <h2>Menu</h2>
@@ -37,15 +71,18 @@
         <div class="menu-item"><span>Sashimi Tuna</span> <span>22 CHF</span></div>
     </div>
     
-    <div class="contact">
-        <h2>Contact</h2>
-        <a href="https://www.instagram.com/kumo_sushi" target="_blank">Instagram</a>
-        <p>contact@kumo-sushi.com</p>
-        <p>Address: 123 Sushi Street, Hawaii</p>
-    </div>
-    
-    <div class="footer">
-        &copy; 2025 Kumo Sushi - All Rights
+    <div class="contact-footer">
+      <div class="contact">
+          <h2>Contact</h2>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          <a href="https://www.google.com/maps?q=21.176925, -157.251094" target="_blank"><i class="fa-solid fa-location-dot"></i>123 Sushi Street, Hawaii</a>
+          <a href="mailto:contacto@kumo-sushi.com"> <i class="fa-solid fa-envelope"></i> contact@kumo-sushi.com</a>
+          <a href="tel:+00770000000"> <i class="fa-solid fa-phone"></i> +00 77 000 00 00</a>
+
+      </div>
+      <div class="footer">
+          &copy; 2025 Kumo Sushi - All Rights Reserved
+      </div>
     </div>
     
 </body>

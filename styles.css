@@ -1,4 +1,4 @@
- 
+
 @font-face {
   font-family: 'KH Teka';
   src: url('KH-Teka.woff2') format('woff2');
@@ -7,8 +7,28 @@
 body {
   margin: 0;
   overflow-x: hidden;
-  background: linear-gradient(to bottom, #ff9a8b, #ff6a88);
   font-family: 'KH Teka', sans-serif;
+  transition: background 1s ease-in-out;
+}
+
+body.morning {
+  background: linear-gradient(to bottom, #ff9a8b, #ff6a88);
+}
+
+body.day {
+  background: linear-gradient(to bottom, #87ceeb, #87a8eb);
+}
+
+body.evening {
+  background: linear-gradient(to bottom, #ff7e5f, #feb47b);
+}
+
+body.night {
+  background: linear-gradient(to bottom, #557a9f, #3e6184);
+}
+
+body.night .logo {
+  color: white;
 }
 
 .logo {
@@ -30,42 +50,99 @@ body {
 .menu {
   position: relative;
   text-align: center;
-  padding: 50px 20px;
-  z-index: 999;
+  padding: 30px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  max-width: 600px;
+  margin: 100px auto 0 auto; 
+  backdrop-filter: blur(10px);
 }
+
 .menu h2 {
-  font-size: 28px;
+  font-size: 25px;
   margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #000000;
 }
+
 .menu-item {
   display: flex;
   justify-content: space-between;
   max-width: 500px;
-  margin: 10px auto;
-  font-size: 20px;
-  border-bottom: 1px solid #000;
-  padding-bottom: 5px;
+  margin: 15px auto;
+  font-size: 17px;
+  padding: 10px;
+  color: #000000;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 
-.contact {
+.menu-item:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+.menu-item:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.contact-footer {
   position: relative;
   text-align: center;
-  padding: 50px 20px;
-  z-index: 999;
+  padding: 20px;
+  background: #000000;
+  color: white;
+  margin: 100px auto 0 auto;
+  backdrop-filter: blur(10px);
 }
-.contact a {
-  display: block;
-  font-size: 20px;
+
+.contact h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.contact a, .contact p {
+  font-size: 18px;
   margin: 10px 0;
-  color: black;
+  color: white;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: transform 0.3s ease;
+}
+
+.contact a:hover, .contact p:hover {
+  transform: scale(1.1);
+  color: #c1c1c1;
+}
+
+.contact i {
+  font-size: 22px;
 }
 
 .footer {
-  background: black;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  bottom: 0;
-  width: 100%;
+  margin-top: 20px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+@media (max-width: 650px) {
+  .menu {
+    border-radius: 0;
+  }
+
+  .menu-item {
+    margin: 1px;
+  }
+
 }
