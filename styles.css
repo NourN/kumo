@@ -162,4 +162,38 @@ body.night a:hover, .contact p:hover {
     margin: 5px 0px;
   }
 
+  .cloud {
+    width: 120px;
+    height: 70px;
+  }
+
+  #cloud1 {
+    width: 120px;
+    height: 70px;
+  }
+  #cloud2 {
+    width: 140px;
+    height: 80px;
+  }
+  #cloud3 {
+    width: 130px;
+    height: 75px;
+  }
+  #cloud4 {
+    width: 160px;
+    height: 95px;
+  }
+  #cloud5 {
+    width: 110px;
+    height: 65px;
+  }
+  #cloud6 {
+    width: 150px;
+    height: 85px;
+  }
+  #cloud7 {
+    width: 130px;
+    height: 75px;
+  }
+
 }

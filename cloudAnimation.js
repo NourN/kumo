@@ -24,7 +24,7 @@ function animateClouds() {
     posX -= speed;
 
     if (window.innerWidth <= 650) {
-      if (posX < -40) {  
+      if (posX < -35) {  
         cloud.style.fill = "transparent";
         posX = 102;
       } else {
