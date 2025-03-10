@@ -63,7 +63,7 @@ body.night .logo {
   margin-bottom: 20px;
   font-weight: bold;
   letter-spacing: 2px;
-  color: #000000;
+  color: black;
 }
 
 .menu-item {
@@ -73,8 +73,7 @@ body.night .logo {
   margin: 15px auto;
   font-size: 17px;
   padding: 10px;
-  color: #000000;
-  font-weight: bold;
+  color: black;
   border-radius: 8px;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
@@ -87,16 +86,12 @@ body.night .logo {
   transform: scale(1.05);
 }
 
-.menu-item:hover::after {
-  width: 100%;
-  left: 0;
-}
-
 .contact-footer {
+  width: 100vw;
   position: relative;
   text-align: center;
   padding: 20px;
-  background: #000000;
+  background: black;
   color: white;
   margin: 100px auto 0 auto;
   backdrop-filter: blur(10px);
@@ -138,6 +133,7 @@ body.night .logo {
 
 @media (max-width: 650px) {
   .menu {
+    width: 100vw;
     border-radius: 0;
   }
 
