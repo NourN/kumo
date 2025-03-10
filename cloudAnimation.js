@@ -10,7 +10,7 @@ const clouds = [
 
 function getCloudSpeed() {
   if (window.innerWidth <= 650) {
-    return 0.05;
+    return 0.1;
   } else {
     return 0.02;
   }
@@ -18,14 +18,32 @@ function getCloudSpeed() {
 
 function animateClouds() {
   let speed = getCloudSpeed();
+  
   clouds.forEach((cloud) => {
-      let posX = parseFloat(cloud.style.left) || 0;
-      posX -= speed;
-      if (posX < -30) {
-          posX = 100;
+    let posX = parseFloat(cloud.style.left) || 0;
+    posX -= speed;
+
+    if (window.innerWidth <= 650) {
+      if (posX < -40) {  
+        cloud.style.fill = "transparent";
+        posX = 102;
+      } else {
+        cloud.style.fill = "white";
+        cloud.style.opacity = 0.7;
       }
-      cloud.style.left = posX + '%';
+    } else {
+      if (posX < -13) {  
+        cloud.style.fill = "transparent";
+        posX = 102;
+      } else {
+        cloud.style.fill = "white";
+        cloud.style.opacity = 0.7;
+      }
+    }
+    
+    cloud.style.left = `${posX}%`;
   });
+  
   requestAnimationFrame(animateClouds);
 }
 

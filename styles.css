@@ -45,15 +45,17 @@ body.night .logo {
   position: absolute;
   fill: white;
   opacity: 0.6;
+  transition: left 0.1s linear;
+  transition: transform 0.3s ease
 }
 
 .menu {
+  width: 700px;
   position: relative;
   text-align: center;
   padding: 30px 0px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 15px;
-  max-width: 600px;
   margin: 100px auto 0 auto; 
   backdrop-filter: blur(10px);
 }
@@ -76,8 +78,8 @@ body.night .logo {
   width: 90%;
   display: flex;
   justify-content: space-between;
-  margin: 15px auto;
-  font-size: 17px;
+  margin: 3px auto;
+  font-size: 18px;
   padding: 10px;
   color: black;
   border-radius: 8px;
@@ -100,7 +102,6 @@ body.night .logo {
   background: black;
   color: white;
   margin: 100px auto 0 auto;
-  backdrop-filter: blur(10px);
 }
 
 .contact h2 {
@@ -119,11 +120,26 @@ body.night .logo {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  transition: transform 0.3s ease;
 }
 
 .contact a:hover, .contact p:hover {
-  color: #c1c1c1;
+  color: #e2e2e2;
+}
+
+body.morning a:hover, .contact p:hover {
+  color: #ff6a88;
+}
+
+body.day a:hover, .contact p:hover {
+  color: #98baff;
+}
+
+body.evening a:hover, .contact p:hover {
+  color: #feb47b;
+}
+
+body.night a:hover, .contact p:hover {
+  color: #ebe887;
 }
 
 .contact i {
@@ -136,7 +152,7 @@ body.night .logo {
   opacity: 0.7;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
   .menu {
     width: 100vw;
     border-radius: 0;
