@@ -8,7 +8,7 @@ const clouds = [
   document.getElementById('cloud7'),
 ];
 
-function getCloudSpeed() {
+const getCloudSpeed = () => {
   if (window.innerWidth <= 650) {
     return 0.1;
   } else {
@@ -16,7 +16,7 @@ function getCloudSpeed() {
   }
 }
 
-function animateClouds() {
+const animateClouds = () => {
   let speed = getCloudSpeed();
   
   clouds.forEach((cloud) => {

@@ -1,4 +1,4 @@
-function updateBackground() {
+const updateBackground = () => {
   const body = document.body;
   const currentHour = new Date().getHours();
 
