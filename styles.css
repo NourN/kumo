@@ -3,13 +3,16 @@
   font-family: 'KH Teka';
   src: url('KH-Teka.woff2') format('woff2');
 }
-
+html {
+  margin: 0;
+  width: 100vw;
+}
 body {
   margin: 0;
   overflow-x: hidden;
   font-family: 'KH Teka', sans-serif;
-  transition: background 1s ease-in-out;
-  min-height: 100vh
+  background: linear-gradient(to bottom, #ff9a8b, #ff6a88);
+  min-height: 100vh;
 }
 
 body.morning {
@@ -34,12 +37,10 @@ body.night .logo {
 
 .logo {
   font-family: 'KH Teka', sans-serif;
+  padding: 10px;
   font-size: 32px;
   font-weight: 900;
   color: black;
-  position: relative;
-  top: 10px;
-  left: 20px;
 }
 
 .clouds {
@@ -48,7 +49,7 @@ body.night .logo {
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none; /* Empêche l'interaction avec les nuages */
+  pointer-events: none;
 }
 
 .cloud {
@@ -71,7 +72,7 @@ body.night .logo {
 }
 
 .menu h2 {
-  font-size: 25px;
+  font-size: 2rem;
   margin-bottom: 20px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -89,7 +90,7 @@ body.night .logo {
   display: flex;
   justify-content: space-between;
   margin: 3px auto;
-  font-size: 18px;
+  font-size: 1.4rem;
   padding: 7px;
   color: black;
   border-radius: 8px;
@@ -107,7 +108,7 @@ body.night .logo {
 }
 
 .menu-ingredients{
-  font-size: 14px;
+  font-size: 1rem;
   text-align: left;
 }
 
@@ -127,19 +128,19 @@ body.night .logo {
 }
 
 .footer {
-  font-size: 14px;
+  font-size: 1.1rem;
   opacity: 0.7;
 }
 
 .contact h2 {
-  font-size: 24px;
+  font-size: 1.8rem;
   margin-bottom: 20px;
   font-weight: bold;
   letter-spacing: 2px;
 }
 
 .contact a, .contact p {
-  font-size: 18px;
+  font-size: 1.3rem;
   margin: 10px 0;
   color: white;
   text-decoration: none;
@@ -170,7 +171,7 @@ body.night a:hover, .contact p:hover {
 }
 
 .contact i {
-  font-size: 22px;
+  font-size: 1.7rem;
 }
 
 @media (max-width: 700px) {
